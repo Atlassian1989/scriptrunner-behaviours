@@ -1,10 +1,8 @@
 def projectKey = getIssueContext().getProjectObject().getKey()
 def issueTypeName = getIssueContext().getIssueType().getName()
-
 def WSField = getFieldByName("Wiki Space Name")
 def SKField = getFieldByName("Space Key")
 def SAField = getFieldByName("Space Administrators")
-
 if (issueTypeName == "Wiki Space Request")
 {
     WSField.setHidden(false)
@@ -14,7 +12,6 @@ if (issueTypeName == "Wiki Space Request")
     SAField.setHidden(false)
     SAField.setRequired(true)
 }
-
 else
  {
     WSField.setHidden(true)
