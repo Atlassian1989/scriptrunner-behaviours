@@ -39,7 +39,7 @@ else
     jpField.setRequired(false)
     
     fvField.setHidden(true)
-    sField.setHidden(true)
+    sField.setHidden(false)
     tField.setHidden(true)
     rField.setHidden(true)
     SPField.setHidden(true)
