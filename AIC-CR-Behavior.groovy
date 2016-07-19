@@ -4,8 +4,7 @@ def KDNField = getFieldByName("Kit Document Number")
 
 def selectedOption = IKDField.getValue() as String
 
-if (selectedOption != "")
-{
+
 if (selectedOption == "Yes")
 {
   KDNField.setHidden(false)
@@ -15,10 +14,4 @@ else
  {
    KDNField.setHidden(true)
    KDNField.setRequired(false)
- }
-}
-else
- {
-    KDNField.setHidden(true)
-   KDNField.setRequired(false) 
  }
